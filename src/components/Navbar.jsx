@@ -12,8 +12,8 @@ function NavbarComp() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to="#home">Products</NavLink>
-            <NavLink href="#link">Contact</NavLink>
+            <NavLink to="/products">Products</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
             <NavDropdown title="Dashboard" id="basic-nav-dropdown">
               <NavLink to="/dashboard/profile">
                 <NavDropdown.Item>Profile</NavDropdown.Item>
