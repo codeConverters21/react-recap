@@ -8,6 +8,7 @@ import NavbarComp from "../components/Navbar";
 import Profile from "../pages/Profile";
 import Settings from "../pages/Settings";
 import Dashboard from "../pages/Dashboard";
+import Login from "../pages/Login";
 
 const AppRouter = () => {
   return (
@@ -18,7 +19,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}>
           {/* absolute path */}
           <Route path="/dashboard/profile" element={<Profile />} />

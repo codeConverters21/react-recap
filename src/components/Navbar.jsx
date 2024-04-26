@@ -13,8 +13,8 @@ function NavbarComp() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <NavLink to="/products">Products</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
             <NavLink to="/dashboard">Dashboard</NavLink>
+            <NavLink to="/login">Login</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
