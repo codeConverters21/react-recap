@@ -14,14 +14,7 @@ function NavbarComp() {
           <Nav className="me-auto">
             <NavLink to="/products">Products</NavLink>
             <NavLink to="/contact">Contact</NavLink>
-            <NavDropdown title="Dashboard" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <NavLink to="/dashboard/profile">Profile</NavLink>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <NavLink to="/dashboard/settings">Settings</NavLink>
-              </NavDropdown.Item>
-            </NavDropdown>
+            <NavLink to="/dashboard">Dashboard</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

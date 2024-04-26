@@ -7,6 +7,7 @@ import Notfound from "../pages/Notfound";
 import NavbarComp from "../components/Navbar";
 import Profile from "../pages/Profile";
 import Settings from "../pages/Settings";
+import Dashboard from "../pages/Dashboard";
 
 const AppRouter = () => {
   return (
@@ -17,7 +18,7 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
-        <Route>
+        <Route path="/dashboard" element={<Dashboard />}>
           <Route path="/dashboard/profile" element={<Profile />} />
           <Route path="/dashboard/settings" element={<Settings />} />
         </Route>
