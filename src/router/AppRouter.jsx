@@ -5,6 +5,8 @@ import Products from "../pages/Products";
 import Contact from "../pages/Contact";
 import Notfound from "../pages/Notfound";
 import NavbarComp from "../components/Navbar";
+import Profile from "../pages/Profile";
+import Settings from "../pages/Settings";
 
 const AppRouter = () => {
   return (
@@ -15,6 +17,10 @@ const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
+        <Route>
+          <Route path="/dashboard/profile" element={<Profile />} />
+          <Route path="/dashboard/settings" element={<Settings />} />
+        </Route>
         <Route path="*" element={<Notfound />} />
       </Routes>
     </>
