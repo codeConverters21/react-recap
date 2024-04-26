@@ -15,12 +15,12 @@ function NavbarComp() {
             <NavLink to="/products">Products</NavLink>
             <NavLink to="/contact">Contact</NavLink>
             <NavDropdown title="Dashboard" id="basic-nav-dropdown">
-              <NavLink to="/dashboard/profile">
-                <NavDropdown.Item>Profile</NavDropdown.Item>
-              </NavLink>
-              <NavLink to="/dashboard/settings">
-                <NavDropdown.Item>Settings</NavDropdown.Item>
-              </NavLink>
+              <NavDropdown.Item>
+                <NavLink to="/dashboard/profile">Profile</NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink to="/dashboard/settings">Settings</NavLink>
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
