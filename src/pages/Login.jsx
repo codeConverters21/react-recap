@@ -1,16 +1,29 @@
+import { useState } from "react";
+import { Button } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({ email, password });
+  };
+
   return (
-    <Form>
+    <Form onSubmit={handleSubmit}>
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
         <Form.Label column sm="2">
           Email
         </Form.Label>
         <Col sm="10">
-          <Form.Control />
+          <Form.Control
+            placeholder="email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </Col>
       </Form.Group>
 
@@ -19,9 +32,14 @@ function Login() {
           Password
         </Form.Label>
         <Col sm="10">
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </Col>
       </Form.Group>
+      <Button type="submit">Submit</Button>
     </Form>
   );
 }
