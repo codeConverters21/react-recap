@@ -12,6 +12,7 @@ import Dashboard from "../pages/Dashboard";
 const AppRouter = () => {
   return (
     // <BrowserRouter>
+    // http://localhost:3000/
     <>
       <NavbarComp />
       <Routes>
@@ -19,7 +20,11 @@ const AppRouter = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<Dashboard />}>
+          {/* absolute path */}
           <Route path="/dashboard/profile" element={<Profile />} />
+          {/* relative path */}
+          {/* http://localhost:3000/dashboard */}
+          {/* <Route path="profile" element={<Profile />} /> */}
           <Route path="/dashboard/settings" element={<Settings />} />
         </Route>
         <Route path="*" element={<Notfound />} />
